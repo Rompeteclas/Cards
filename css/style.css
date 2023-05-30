@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;}
+:root{
+    --primary: #00669F;
+    --secondary: #1CD1B0;    
+    --primaryText: #000000;
+    --secondaryText: #FFFFFF;
+}
+html{    
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color:var(--secondary);    
+    padding: 10px 0 10px 27px;
+    height: 38px;    
+}
+.cab{
+    position: sticky;
+    height: 101px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 47px;
+    z-index: 50;
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.4);;
+}
+.cab{    
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    padding: 28px;
+    background-color: var(--primary);
+}
+.cards {
+    text-align: center;
+    top: 153px;
+    position: relative;
+    margin-bottom: 300px;
+  }
+  
+  .card {
+    display: inline-block;
+    height: 529px;
+    width: 300px;
+    margin: 16px;    
+  }
+.cardtop{
+    position: relative;
+    height: 194px;
+    
+    border-radius: 16px 16px 0 0;
+}
+.bg1{
+    background-image: url("../img/fbat.jpg");
+}
+.bg2{
+    background-image: url("../img/fhar.jpg");
+}
+.bg3{
+    background-image: url("../img/fbat.jpg");
+}
+.cardtop .life{
+    position: absolute;            
+    top: 20px;
+    left:20px;
+}
+.cardtop .user{
+    position: absolute;        
+    left: 86px;
+    bottom: -64px;    
+    z-index: 1;
+}
+.cardbottom{
+    position:relative;
+    height: 336px;
+    background-color: #F3F3F3;    
+    border-bottom: #aca9a9 solid ;    
+    text-align: center;            
+}
+.cardbottom div{
+    position: absolute;         
+    bottom:100px;
+}
+.cardbottom p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+.cardbottom button{
+    position: absolute;
+    background-color: var(--primary);
+    color:var(--secondaryText);
+    width: 128.78px;
+    height: 48.52px;
+    border: var(--primary);;    
+    left: 85.6px;    
+    bottom: 20px;
+}
+footer {
+    position: absolute;    
+    bottom: 0px;
+    height: 51px;    
+}
+footer div{    
+    position: relative;    
+    margin-top: 300px;
+    bottom: 0px;
+    width: 100vw;   
+    background-color: var(--primary);    
+    color: var(--secondaryText);
+    padding: 16px;       
+}
