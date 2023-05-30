@@ -11,9 +11,11 @@ html{
     font-family: 'Roboto', sans-serif;
 }
 header{
-    background-color:var(--secondary);    
-    padding: 10px 0 10px 27px;
+    background-color:var(--secondary);     
     height: 38px;    
+}
+header div{
+    padding: 10px 0 10px 27px;
 }
 .cab{
     position: sticky;
