@@ -28,9 +28,11 @@ header{
 .cab{    
     position: sticky;
     top: 0;
-    z-index: 99;
-    padding: 28px;
+    z-index: 99;    
     background-color: var(--primary);
+}
+.cab h1{
+    padding: 28px;
 }
 .cards {
     text-align: center;
