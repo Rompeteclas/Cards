@@ -1,118 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;}
-:root{
-    --primary: #00669F;
-    --secondary: #1CD1B0;    
-    --primaryText: #000000;
-    --secondaryText: #FFFFFF;
+  box-sizing: border-box;
+  margin: 0;
 }
-html{    
-    font-family: 'Roboto', sans-serif;
+
+body {
+  font-family: "Roboto", sans-serif;
 }
-header{
-    background-color:var(--secondary);     
-    height: 38px;    
+
+/********** ESTILOS PARA EL HEADER **********/
+
+header p {
+  background-color: #1cd1b0;
+  padding: 2px 0px 2px 10px;
 }
-header div{
-    padding: 10px 0 10px 27px;
+
+h1 {
+  background-color: #00669f;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
-.cab{
-    position: sticky;
-    height: 101px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 47px;
-    z-index: 50;
-    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.4);;
+
+/********** ESTILOS PARA EL MAIN **********/
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-.cab{    
-    position: sticky;
-    top: 0;
-    z-index: 99;    
-    background-color: var(--primary);
+
+section article {
+  background-color: #f3f3f3;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 300px;
 }
-.cab h1{
-    padding: 28px;
+
+section article .contenedor {
+  height: 200px;
+  width: 300px;
+  border-radius: 16px 16px 0 0;
+  background-size: cover;
 }
-.cards {
-    text-align: center;
-    top: 153px;
-    position: relative;
-    margin-bottom: 300px;
+
+section article .contenedor i {
+  font-size: 24px;
+  color: red;
+  padding: 15px;
+}
+
+section article .bgBatman {
+  background-image: url("../img/fondoBatman.png");
+}
+section article .bgWonderWoman {
+  background-image: url("../img/fondoWonderWoman.png");
+}
+section article .bgHarley {
+  background-image: url("../img/fondoHarleyQuinn.png");
+}
+section article .bgSuperman {
+  background-image: url("../img/fondoSuperman.png");
+}
+.superman>img{
+  background-image: url('../img/superman.png');
+}
+section article img {
+  border-radius: 50%;
+  width: 125px;
+  position: absolute;
+  top: 130px;
+}
+
+section article h3 {
+  font-size: 24px;
+  margin-top: 70px;
+  text-transform: uppercase;
+}
+
+section article p {
+  font-size: 12px;
+  height: 120px;
+  margin: 10px 20px;
+  text-align: left;
+}
+
+section article button {
+  background-color: #00669f;
+  border: none;
+  color: white;
+
+  margin: 25px;
+  padding: 10px 30px;
+}
+/********** ESTILOS PARA EL FOOTER **********/
+
+footer {
+  background-color: #00669f;
+  color: white;
+  padding: 30px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  position: absolute;
+  right: 25px;
+  width: 100px;
+}
+@media screen and (max-width: 480px) {
+  .harleyquinn, .imgsuper{
+    display: none;  
+  }
+  .imgsuper2{
+    background-image: url('../img/superman2.png');
+  
+  }
+  footer img{
+    display:none;
   }
   
-  .card {
-    display: inline-block;
-    height: 529px;
-    width: 300px;
-    margin: 16px;    
   }
-.cardtop{
-    position: relative;
-    height: 194px;
-    
-    border-radius: 16px 16px 0 0;
-}
-.bg1{
-    background-image: url("../img/fbat.jpg");
-}
-.bg2{
-    background-image: url("../img/fhar.jpg");
-}
-.bg3{
-    background-image: url("../img/fbat.jpg");
-}
-.cardtop .life{
-    position: absolute;            
-    top: 20px;
-    left:20px;
-}
-.cardtop .user{
-    position: absolute;        
-    left: 86px;
-    bottom: -64px;    
-    z-index: 1;
-}
-.cardbottom{
-    position:relative;
-    height: 336px;
-    background-color: #F3F3F3;    
-    border-bottom: #aca9a9 solid ;    
-    text-align: center;            
-}
-.cardbottom div{
-    position: absolute;         
-    bottom:100px;
-}
-.cardbottom p{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-}
-.cardbottom button{
-    position: absolute;
-    background-color: var(--primary);
-    color:var(--secondaryText);
-    width: 128.78px;
-    height: 48.52px;
-    border: var(--primary);;    
-    left: 85.6px;    
-    bottom: 20px;
-}
-footer {
-    position: absolute;    
-    bottom: 0px;
-    height: 51px;    
-}
-footer div{    
-    position: relative;    
-    margin-top: 300px;
-    bottom: 0px;
-    width: 100vw;   
-    background-color: var(--primary);    
-    color: var(--secondaryText);
-    padding: 16px;       
-}
+  
